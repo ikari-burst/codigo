@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Encabezado{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(8, 7, 18);
+    font-size: 20px;    
+    font-family: sans-serif;
+    background-color: rgb(14, 90, 116)
+}
+.logo{
+    border-radius: 5px;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+.menu a{
+    color: beige;
+    font-size: 18px;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #00b4d8;
+    transition: 0.3s;
+}
+.menu a.Registro {
+    background-color: #00b4d8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.contenido {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+.imagen-bienvenida{
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    margin: 20px 0;
+    display: block;
+}
+.pie-de-pagina {
+    background: rgb(14,90,116);
+    color:white;
+    text-align:center;
+    padding: 10px;
+    margin-top: 20px;
+}
+@media(max-width:700px){
+    .Encabezado{
+        flex-direction: column;
+    }
+    .menu ul{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+.marca{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nombre-insti{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.valores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.beneficios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    list-style: none;
+}
+.bloque{
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #222020;
+}
+#inicio {
+    text-align: center;
+    padding: 40px 20px;
+}
+#inicio h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: rgb(14, 90, 116);
+}
+#inicio ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+#inicio .btn-primary {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+#beneficios {
+    background-color: #e5f4f7;
+    padding: 40px 20px;
+    border-radius: 12px;
+}
+.programa.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.programa.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
